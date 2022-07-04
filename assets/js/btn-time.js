@@ -1,8 +1,8 @@
 var boton = document.getElementById("download");
-var contador = 10;
+var contador = 15;
 var etiqueta = document.createElement("p");
 
-etiqueta.innerHTML = "<b></b>";
+etiqueta.innerHTML = "<b> 15 segundos para descargar.</b>";
 var id;
 
 boton.parentNode.replaceChild(etiqueta, boton);
@@ -16,7 +16,7 @@ function descarga(){
          window.clearInterval(id);
       }
       else{
-         etiqueta.innerHTML = + contador.toString() + "<b> seconds to download. </b>";
+         etiqueta.innerHTML = + contador.toString() + "<b> segundos para descargar. </b>";
       }
    }, 1000)
 }
