@@ -1,3 +1,3 @@
 var currentCallback;window.alert=function(msg,callback){$('.message').text(msg);$('.customAlert').css('animation','fadeIn 0.3s linear');$('.customAlert').css('display','inline');setTimeout(function(){$('.customAlert').css('animation','none');},300);currentCallback=callback;}
 $(function(){$('.confirmButton').click(function(){$('.customAlert').css('animation','fadeOut 0.3s linear');setTimeout(function(){$('.customAlert').css('animation','none');$('.customAlert').css('display','none');},300);currentCallback();})
-setTimeout(function(){alert('I recommend you an anarchy server called 2l2c where you can use these Hacks/Mods. (2l2c.org)',function(){console.log("Callback executed");});},500);});
+setTimeout(function(){alert('I recommend you an anarchy server called 2b2t where you can use these Hacks/Mods. (2b2t.org)',function(){console.log("Callback executed");});},500);});
